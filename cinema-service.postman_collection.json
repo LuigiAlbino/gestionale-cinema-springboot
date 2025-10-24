@@ -35,7 +35,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"mario.rossi@email.com\",\r\n  \"password\": \"admin123\"\r\n}",
+							"raw": "{\r\n  \"email\": \"admin@admin.com\",\r\n  \"password\": \"admin123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -587,16 +587,6 @@
 			]
 		}
 	],
-	"auth": {
-		"type": "bearer",
-		"bearer": [
-			{
-				"key": "token",
-				"value": "{{token}}",
-				"type": "string"
-			}
-		]
-	},
 	"event": [
 		{
 			"listen": "prerequest",
@@ -619,12 +609,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "token",
-			"value": ""
 		}
 	]
 }

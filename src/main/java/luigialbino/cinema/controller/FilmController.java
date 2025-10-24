@@ -26,7 +26,7 @@ public class FilmController {
             @ApiResponse(responseCode = "200", description = "Film trovati con successo"),
             @ApiResponse(responseCode = "404", description = "Nessun film trovato")
     })
-    public ResponseEntity<PageResponseDTO<FilmDTO>> getAll3(@PageableDefault(sort = "dataUscita") Pageable pageable){
+    public ResponseEntity<PageResponseDTO<FilmDTO>> getAll(@PageableDefault(sort = "dataUscita") Pageable pageable){
         PageResponseDTO<FilmDTO> response = filmService.getAll(pageable);
         return ResponseEntity.ok(response);
     }

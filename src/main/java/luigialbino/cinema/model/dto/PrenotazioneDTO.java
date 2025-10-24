@@ -20,7 +20,4 @@ public class PrenotazioneDTO {
 
     @Schema(description = "Numero di posti prenotati", example = "3")
     private int postiPrenotati;
-
-    @Schema(description = "???", example = "1")
-    private String stato;
 }

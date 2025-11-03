@@ -583,6 +583,46 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Crea Prenotazione",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n\t\"idProiezione\": 13,\r\n\t\"postiPrenotati\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/prenotazione/crea-prenotazione",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prenotazione",
+								"crea-prenotazione"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}

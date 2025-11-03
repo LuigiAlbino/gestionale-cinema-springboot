@@ -58,7 +58,7 @@ public class UtenteController {
             @ApiResponse(responseCode = "200", description = "Utente aggiornato con successo"),
             @ApiResponse(responseCode = "404", description = "Utente non trovato")
     })
-    public ResponseEntity<UtenteDTO> aggiornaFilm(@Parameter(description = "ID dell'utente da aggiornare", example = "1")
+    public ResponseEntity<UtenteDTO> aggiornaUtente(@Parameter(description = "ID dell'utente da aggiornare", example = "1")
                                                 @PathVariable Long id,
                                                 @Parameter(description = "Nuovi dati dell'utente")
                                                 @RequestBody UtenteDTO utenteDTO){

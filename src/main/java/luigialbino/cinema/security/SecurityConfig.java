@@ -50,7 +50,7 @@ public class SecurityConfig {
                                                     "/api/proiezioni/**",
                                                     "/api/utenti/**").hasAnyRole("USER", "ADMIN")
                         // tutte le altre richieste devono essere autenticate
-                        .anyRequest().authenticated()
+                        .anyRequest().hasAnyRole("USER", "ADMIN")
                 )
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
